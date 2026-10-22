@@ -170,7 +170,7 @@ const th={},ob=document.getElementById('opts');
 function all(){['bold','calm','playful'].forEach(t=>{draw(t);const c=th[t];c.height=Math.round(216*H/W);c.getContext('2d').drawImage(cv,0,0,216,c.height)});draw();[...ob.children].forEach(b=>b.setAttribute('aria-pressed',b.dataset.t===st.et))}
 const SG=document.getElementById('stage'),RM=matchMedia('(prefers-reduced-motion:reduce)').matches,sl=ms=>new Promise(q=>setTimeout(q,ms));
 let dm=0;
-const EX=["Start before you feel ready.","Breathe slowly. Nothing is urgent.","Dance like nobody's watching!","Small steps still count.","Nothing great ships on the first try.","Go outside. Touch grass!","Less noise, more signal.","Quiet days build loud lives."];
+const EX=["Start before you feel ready.","Life is too short to be unhappy.","Our life is what our thoughts make it.","Small steps still count.","Nothing great ships on the first try.","If you're going through hell, keep going.","The only joy in the world is to begin.","Quiet days build loud lives."];
 function setText(t){st.t=t;T.value=t;st.ki=null;st.ks={};st.si=0;sync()}
 const exb=document.getElementById('ex');
 EX.forEach(t=>{const b=document.createElement('button');b.type='button';b.textContent=t;b.onclick=()=>{dm=0;setText(t)};exb.append(b)});
